@@ -27,7 +27,7 @@ span {
   background: #886477;
   transform: translateY(20rem);
   animation-name: circle;
-  animation-duration: 1s;
+  animation-duration: 2s;
   animation-iteration-count:infinite;
 
 }
@@ -35,7 +35,7 @@ span {
   background: #49dad6;
   transform: translateY(38rem);
   animation-name: circle2;
-  animation-duration: 1s;
+  animation-duration: 2s;
   animation-iteration-count:infinite;
 
 }
@@ -43,7 +43,7 @@ span {
   background: #9bd7cd;
   transform: translateY(6rem) translateX(-7.9rem);
   animation-name: circle3;
-  animation-duration: 1s;
+  animation-duration: 2s;
   animation-iteration-count:infinite;
 
 }
@@ -51,7 +51,7 @@ span {
   background: #979588;
   transform: translateY(0rem);
   animation-name: circle4;
-  animation-duration: 1s;
+  animation-duration: 2s;
   animation-iteration-count:infinite;
 
 }
@@ -60,7 +60,7 @@ span {
   transform: translateY(43rem) translateX(-6.5rem);
 
   animation-name: circle5;
-  animation-duration: 1s;
+  animation-duration: 2s;
   animation-iteration-count:infinite;
 
 }
@@ -68,7 +68,7 @@ span {
   background: #f4a53f;
   transform: translateY(5.9rem);
   animation-name: circle6;
-  animation-duration: 1s;
+  animation-duration: 2s;
 animation-iteration-count:infinite;
 
 }
@@ -76,7 +76,7 @@ animation-iteration-count:infinite;
   background: #4e9cc5;
   transform: translateY(14rem) translateX(43rem);
   animation-name: circle7;
-  animation-duration: 1s;
+  animation-duration: 2s;
 animation-iteration-count:infinite;
 
 }
@@ -85,47 +85,51 @@ animation-iteration-count:infinite;
   transform: translateY(30rem) translateX(29rem);
     /* transform: translateX(200%) translateY(20rem); */
 animation-name: circle8;
-animation-duration: 1s;
+animation-duration: 2s;
 animation-iteration-count:infinite;
 }
 @keyframes circle {
   0% {
-    transform: translateX(300%) translateY(20rem);
+    transform: translateX(300%) translateY(20rem) scale(2);
+
   }
 }
 @keyframes circle2 {
   0% {
-    transform: translateX(200%) translateY(20rem);
+    transform: translateX(200%) translateY(20rem) scale(2);
     /* transform: translateY(38rem); */
   }
 }
 @keyframes circle3 {
   0% {
-    transform: translateX(100%) translateY(20rem);
+    transform: translateX(100%) translateY(20rem) scale(2);
   }
 }
 @keyframes circle4 {
   0% {
-    transform: translateX(0%) translateY(20rem);
+    transform: translateX(0%) translateY(20rem) scale(2);
+
   }
 }
 @keyframes circle5 {
   0% {
-    transform: translateX(-100%) translateY(20rem);
+    transform: translateX(-100%) translateY(20rem) scale(2);
   }
 }
 @keyframes circle6 {
   0% {
-    transform: translateX(-200%) translateY(20rem);
+    transform: translateX(-200%) translateY(20rem) scale(2);
   }
 }
 @keyframes circle7 {
   0% {
-    transform: translateX(220px) translateY(14rem);
+    transform: translateX(220px) translateY(14rem) scale(2);
   }
 }
 @keyframes circle8 {
   0%{
-    transform: translateX(200%) translateY(15rem);
+    transform: translateX(200%) translateY(15rem) scale(2);
   } 
+
+}
 }

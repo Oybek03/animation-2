@@ -1,0 +1,215 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.container {
+  display: flex;
+  margin: 0 7rem;
+  position: relative;
+}
+.container-2{
+  margin-top: 1rem;
+}
+.container__buttons--1{
+  background-color: yellow;
+  width: 30%;
+  height: 10rem;
+  margin-right: 0.1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+button{
+  padding: 1rem 2.5rem;
+  border-radius: 2rem;
+  border: 0.3rem solid white;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+  background: none;
+}
+
+.container__button--1{
+  
+  background-color: orange;
+  animation-name: button-1;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+.container__button--1:hover{
+  cursor: pointer;
+  animation-name: button-1;
+  animation-duration: 0.5s;
+  animation-iteration-count: infinite; 
+}
+.container__button--2{
+  background: local;
+}
+.container__button--2::after{
+  content: '';
+  width: 12rem;
+  background-color: rgb(255, 255, 255);
+  position: absolute;
+left: 36.9%;
+bottom: 4rem;
+height: 4rem;
+border-radius: 2rem;
+z-index: 0;
+animation-name: button-2;
+animation-duration: 1s;
+animation-iteration-count: infinite;
+}
+.container__button--2:hover::after{
+  animation-name: button-2;
+animation-duration: 0.5s;
+cursor: pointer;
+animation-iteration-count: infinite;
+}
+.container__button--3{
+  background-color: yellow;
+  animation-name: button-3;
+  animation-duration: 0.7s;
+  animation-iteration-count: infinite;
+}
+.container__button--3:hover{
+  animation-name: button-3;
+  animation-duration: 0.3s;
+  animation-iteration-count: infinite; 
+}
+.container__button--4{
+  background-color: aqua;
+  
+}
+.container__button--5::after{
+  position: absolute;
+  font-size: 3rem;
+  bottom: 8rem;
+  content: "👇"; 
+  animation-name: button-5;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+.container__button--5::before{
+  content: "👉🏻";
+  position: absolute;
+  font-size: 3rem;
+  right:47rem;
+  display: none;
+}
+.container__button--5:hover::before{
+  display: block;
+  animation-name: button-6;
+  animation-duration: 1s;
+  animation-iteration-count: infinite; 
+}
+.h2-4{
+  animation-name: button-4;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+.container__button--5{
+  background-color: coral;
+}
+.container__button--6{
+  background:none;
+}
+.container__button--6::after{
+  content: "💯      💯     💯 ";
+  position: absolute;
+  top: 0.001rem;
+  right: 14rem;
+  animation-name: button-7;
+  animation-iteration-count: infinite;
+  animation-duration: 1s;
+}
+.container__button--6:hover::after{
+  content: "👏    👏    👏";
+  animation-name: button-7;
+  animation-iteration-count: infinite;
+  animation-duration: 1s;
+}
+h2{
+  color: white;
+}
+@keyframes button-1 {
+  0%{
+    transform: scale(1.2);
+ 
+  }
+
+  50%{
+    transform: rotate(1deg);
+  }
+  100%{
+    transform:rotate(0deg) scale(1.2);
+
+  }
+}
+@keyframes button-2 {
+  0%{
+transform: scale(1);
+opacity: 0.9;
+  }
+  50%{
+    opacity: 0.5;
+    transform: scale(1.5);
+    z-index: 1;
+  }
+  70%{
+    opacity: 0.1;
+    transform: scale(2);
+  }
+  100%{
+    transform: scale(1.5);
+    opacity: 1;
+    z-index: -1;
+  }
+}
+@keyframes button-3 {
+  0%{
+    color: yellow;
+  }
+  100%{
+    color: white;
+  }
+}
+@keyframes button-4 {
+  0%{
+    transform: translateX(-8rem);
+    overflow: hidden;
+  }
+  50%{
+    color: yellow;
+    transform: translateX(8rem);
+    overflow: hidden;
+  }
+   100%{
+    transform: translateX(-8rem)
+    opacity: 1;
+    overflow: hidden;
+  }
+}
+@keyframes button-5 {
+  0%{
+    transform: translateY(-2rem);
+  }
+}
+@keyframes button-6 {
+  100%{
+    transform: translateX(2rem);
+  }
+}
+
+@keyframes button-7{
+  0%{
+    transform: translateY(2rem);
+    opacity: 0;
+    position: absolute;
+    z-index: -1;
+  }
+  100%{
+    opacity: 1;
+  }
+}
